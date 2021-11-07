@@ -42,6 +42,7 @@ H_phi = (np.pi/2) - np.arctan( (w/(R*C)) / (-1*(w**2) + (1/(L*C))) )
 H_magDb = 20 * np.log10(H_mag)
 H_phiDeg = (180/np.pi) * H_phi
 
+
     # loop to fix the jump in the phase plot
 for i in range(0,len(H_phiDeg)):
     #Do stuff
@@ -116,7 +117,7 @@ plt.show()
     # Transfer funciton object, num and den are defined in previous task
 H_s = con.TransferFunction(num,den)
     # Make the Bode plot
-Mag, Phi, bodeW = con.bode(H_s, w, dB=True, Hz=True, deg=True, Plot=True)
+Mag, Phi, bodeW = con.bode(H_s, w, dB=True, Hz=True, deg=True, plot=True)
 
 # This code was suposed to create a bodie plot from the output of con.bode
 # that would better match the rest of the generated plots. This was abandoned
