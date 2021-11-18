@@ -143,7 +143,7 @@ plt.show()
 #-------------------------------TASK 1, PART 2---------------#
 
     # Sampleing size
-fs = 50000*2*np.pi
+fs = 5e10
     #Define step size
 steps = 1/fs
 
